@@ -16,9 +16,9 @@ from CustomPyVinted.vinted import Vinted
 TIME_BETWEEN_REQUESTS = 60
 TIME_FOR_RESET_APP = 60
 
-BOT_TOKEN = os.environ['5676773677:AAHyigsVssILayqQGIsr4IGYlW33hYFVq_4']
-CHAT_ID = os.environ['5594949670']
-APP_URL = os.environ['https://vintpars.herokuapp.com/'] + BOT_TOKEN
+BOT_TOKEN = os.environ['BOT_TOKEN']
+CHAT_ID = os.environ['CHAT_ID']
+APP_URL = os.environ['HEROKU_APP_URL'] + BOT_TOKEN
 
 bot = telebot.TeleBot(BOT_TOKEN)
 server = Flask(__name__)
