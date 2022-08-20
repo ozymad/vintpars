@@ -18,7 +18,7 @@ TIME_FOR_RESET_APP = 60
 
 BOT_TOKEN = os.environ['BOT_TOKEN']
 CHAT_ID = os.environ['CHAT_ID']
-APP_URL = os.environ['https://vintpars.herokuapp.com/'] + BOT_TOKEN
+APP_URL = os.environ['HEROKU_APP_URL'] + BOT_TOKEN
 
 bot = telebot.TeleBot(BOT_TOKEN)
 server = Flask(__name__)
